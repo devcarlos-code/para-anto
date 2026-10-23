@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Para Anto 💙</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f3f2f0;--panel:#fff;--ink:#15171f;--mute:#5d6275;--red:#b8323e;--blue:#2f5fc4;--line:rgba(20,23,31,.13);--glow:.10}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0c11;--panel:#14161d;--ink:#eceef4;--mute:#9aa0b4;--red:#d4424e;--blue:#5b8aea;--line:rgba(255,255,255,.11);--glow:.22}}
+:root[data-theme="dark"]{--bg:#0b0c11;--panel:#14161d;--ink:#eceef4;--mute:#9aa0b4;--red:#d4424e;--blue:#5b8aea;--line:rgba(255,255,255,.11);--glow:.22}
+*,*:before,*:after{box-sizing:inherit}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;align-items:center;justify-content:center;padding:18px;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(420px 420px at 0% 0%,var(--blue),transparent 70%),radial-gradient(420px 420px at 100% 100%,var(--red),transparent 70%);opacity:var(--glow)}
+#app{width:100%;max-width:470px;text-align:center;position:relative;animation:in .6s ease}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:.2px}
+h1{font-size:1.75rem;margin:0 0 .6rem}h2{font-size:1.3rem;margin:0 0 .9rem}
+p{line-height:1.6;margin:.5rem 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 10px 40px rgba(0,0,0,.15)}
+.gb{border:2px solid transparent;background:linear-gradient(var(--panel),var(--panel)) padding-box,linear-gradient(135deg,var(--blue),var(--red)) border-box}
+button{font:inherit;cursor:pointer;border:0;border-radius:999px;padding:12px 26px;background:var(--red);color:#fff;font-weight:600;margin:8px 6px;transition:transform .15s,filter .15s}
+button:hover{transform:translateY(-2px);filter:brightness(1.1)}
+button.alt{background:transparent;color:var(--blue);border:1.5px solid var(--blue)}
+.opt{display:block;width:100%;margin:9px 0;background:transparent;color:var(--ink);border:1.5px solid var(--line);border-radius:14px;text-align:left;padding:13px 16px;font-weight:500}
+.opt:hover{border-color:var(--blue);transform:none;background:rgba(91,138,234,.1)}
+.opt.sel{border-color:var(--blue);background:var(--blue);color:#fff}
+.bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin:14px 0}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--red));transition:width .5s}
+input[type=text]{width:100%;font:inherit;padding:13px;border-radius:12px;border:1.5px solid var(--blue);background:transparent;color:var(--ink);margin-top:8px}
+.big{font-size:3rem;line-height:1.2}
+.small{font-size:.75rem;color:var(--mute)}
+.tag{display:inline-block;font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:8px}
+.seal{width:62px;height:62px;border-radius:50%;margin:10px auto;display:flex;align-items:center;justify-content:center;font:700 1.6rem Georgia,serif;color:#fff;background:radial-gradient(circle at 30% 30%,var(--red),#7a1d27);box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.flip{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:14px;padding:16px 18px;margin:12px 0;cursor:pointer;text-align:left;transition:transform .2s}
+.flip:nth-child(odd){border-left-color:var(--red)}
+.flip:hover{transform:translateX(4px)}
+.flip b{display:block;font-family:Georgia,serif;margin-bottom:4px}
+.flip span{color:var(--mute);line-height:1.5;font-size:.95rem}
+.flip[data-o] span{color:var(--ink)}
+.scan{position:relative;width:110px;height:130px;margin:6px auto 14px;border:2px solid var(--blue);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:3.4rem;overflow:hidden}
+.scan:after{content:"";position:absolute;left:0;right:0;height:3px;background:var(--red);box-shadow:0 0 12px var(--red);top:0;opacity:0}
+.scan.on:after{opacity:1;animation:sc 1.2s linear infinite}
+@keyframes sc{0%{top:0}50%{top:100%}100%{top:0}}
+.letter{white-space:pre-wrap;text-align:left;min-height:300px;font-family:Georgia,serif;font-size:1.04rem;line-height:1.75}
+.cur:after{content:"|";color:var(--red);animation:bl 1s infinite}@keyframes bl{50%{opacity:0}}
+#arena{position:relative;height:90px}
+#no{position:absolute;left:55%;top:20px;transition:left .15s,top .15s}
+#yes{position:absolute;left:12%;top:20px}
+.react{min-height:1.6em;color:var(--blue);font-weight:600;margin-top:12px}
+.sum{text-align:left;font-size:.85rem;max-height:250px;overflow:auto;border:1px solid var(--line);border-radius:14px;padding:6px 14px;margin:12px 0;background:var(--panel)}
+.sum p{border-bottom:1px solid var(--line);padding-bottom:8px}.sum b{color:var(--blue)}
+.pulse{animation:pl 1s infinite}@keyframes pl{50%{transform:scale(1.12)}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const NUM="50768671271";
+const Q=[
+["¿Qué es lo que más valoras en una amistad?",["Confianza","Sinceridad","Apoyo en momentos difíciles","Compartir risas"]],
+["¿Cómo describirías nuestra amistad?",["Muy especial","Tranquila y sincera","Divertida","Todavía está creciendo"]],
+["¿Qué recuerdas primero de cuando nos conocimos?",["La partida en Free Fire","Las primeras conversaciones","Cuando empezamos a hablar fuera del juego"]],
+["¿Qué te hizo seguir hablando conmigo?",["Las buenas conversaciones","Me sentí cómoda","Me hacía reír","Teníamos cosas en común"]],
+["¿Qué cualidad mía te gusta más?",["Que te escucho","Mis consejos","Mi sentido del humor","Que soy sincero"]],
+["¿Qué cualidad mía crees que podría mejorar?",["La paciencia","Confiar más en los demás","Hablar de lo que siento"]],
+["¿Cómo prefieres que hablemos?",["Mensajes","Notas de voz","Llamadas","Jugando juntos"]],
+["¿En qué momento del día prefieres conversar?",["Mañana","Tarde","Noche","Madrugada"]],
+["¿Qué te ayuda más cuando tienes un mal día?",["Que me escuchen","Distraerme","Recibir un consejo","Estar sola un rato"]],
+["¿Cómo te han servido mis consejos?",["Me han ayudado mucho","A veces","Prefiero que solo me escuches"]],
+["¿Qué te gustaría que hiciéramos algún día?",["Seguir jugando","Hacer una videollamada","Conocernos en persona","Hacer un viaje"]],
+["¿Qué te gustaría conocer más de mí?",["Mis sueños","Mi historia","Mis gustos","Mis miedos"]],
+["¿Qué te da confianza para abrirte con alguien?",["Que no me juzguen","Que guarden mis secretos","Que me respondan con calma"]],
+["¿Qué es lo mejor que te ha dado esta amistad?",["Compañía","Apoyo","Alegría","Confianza"]],
+["¿Qué significan para ti las conversaciones largas de noche?",["Desahogo","Compañía","Tranquilidad","Conocernos mejor"]],
+["¿Qué esperas de mí como amigo?",["Honestidad","Que esté presente","Que te apoye en tus metas","Que no cambie"]],
+["¿Qué meta o sueño tienes en este momento?",["Estudiar","Trabajar en lo que me gusta","Viajar","Estar bien conmigo misma"]],
+["¿Cómo te imaginas esta amistad dentro de un año?",["Más unida","Igual de buena","Conociéndonos en persona"]],
+["¿Qué me dirías si pudieras decirme algo sin pena?",["Gracias por estar","Me alegra haberte conocido","Cuenta conmigo"]],
+["¿Hay algo que quieras decirme con tus propias palabras?",["Gracias por la carta","Prefiero decírtelo después"]]
+];
+const REACT=["Gracias por responder.","Me gusta saber eso de ti.","Qué bonito saberlo.","Anotado con cariño.","Gracias por tu sinceridad.","Te escucho con atención."];
+const LETTER="Hola, Anto:\n\nHay personas que llegan a tu vida de la forma más inesperada, y tú llegaste en una partida de Free Fire. Empezamos jugando y, sin darnos cuenta, terminamos hablando de todo.\n\nQuiero darte las gracias. Por tus consejos, aunque casi siempre soy yo quien te aconseja. Por tu actitud, que me ha sacado más de una risa justo cuando la necesitaba. Y sobre todo por quedarte conversando conmigo hasta tarde, cuando todos dormían y yo solo quería tener con quién hablar. Esas noches me hicieron muy feliz, y no las olvido.\n\nNo recuerdo la fecha exacta en que nos conocimos, pero sí recuerdo cómo me sentí: acompañado. Y eso, Anto, vale más que cualquier victoria en el juego.\n\nGracias por ser mi amiga. Ojalá esta amistad siga creciendo, partida tras partida y conversación tras conversación.\n\nCon mucho cariño,\nCarlos";
+const A=[];let qi=0;
+const $=s=>document.querySelector(s);
+const app=$("#app");
+function show(h){app.style.animation="none";app.offsetHeight;app.style.animation="";app.innerHTML=h}
+
+function s1(){
+show(`<span class="tag">Una sorpresa para ti</span><h1>¿Quieres recibir un agradecimiento?</h1><div id="arena"><button id="yes">Sí</button><button id="no" class="alt">No</button></div><p class="small" id="hint">Piénsalo bien…</p>`);
+let n=0;const no=$("#no");
+const run=()=>{if(n>=6)return;n++;no.style.left=(Math.random()*60)+"%";no.style.top=(Math.random()*55)+"px";
+if(n>=6){$("#hint").textContent="Está bien, ya no huyo. Pero igual te lo mereces.";no.textContent="Bueno, está bien"}};
+no.addEventListener("pointerenter",run);no.addEventListener("touchstart",e=>{if(n<6){e.preventDefault();run()}},{passive:false});
+no.onclick=()=>{if(n>=6)s2()};$("#yes").onclick=s2;
+}
+function s2(){
+show(`<div class="card gb"><span class="tag">Documento oficial</span><h2>Certificado de amistad</h2><p class="small">Se certifica que</p><h1 style="color:var(--red);margin:6px 0">Antonella “Anto”</h1><p>es oficialmente amiga de <b>Carlos</b> desde aquella partida de <b>Free Fire</b> que lo cambió todo.</p><div class="seal">A</div><p class="small">Fecha: no la recordamos, pero la amistad es real.<br>Firmado: Carlos · No se aceptan devoluciones.</p></div><button onclick="s3()">Continuar</button>`);
+}
+function s3(){
+show(`<span class="tag">Laboratorio de amistad</span><div class="card"><div class="scan" id="fp">🖐️</div><p id="sc">Pon tu dedo en el lector y toca el botón.</p><div class="bar"><i id="b"></i></div><button id="go">Escanear</button></div>`);
+$("#go").onclick=()=>{$("#go").style.display="none";$("#fp").classList.add("on");
+const m=["Analizando huella…","Midiendo nivel de risas…","Revisando paciencia con Carlos…"];let p=0;
+const t=setInterval(()=>{p+=4;$("#b").style.width=p+"%";$("#sc").textContent=m[Math.min(2,Math.floor(p/34))];
+if(p>=100){clearInterval(t);$("#fp").classList.remove("on");$("#sc").innerHTML="<b>Amistad detectada: 100%.<br>Nivel de locura: peligroso.</b>";
+app.insertAdjacentHTML("beforeend",`<button onclick="s4()">Siguiente</button>`)}},100)}}
+function s4(){
+show(`<span class="tag">Sistema</span><h2>Instalando amistad…</h2><div class="card"><div class="big">💾</div><div class="bar"><i id="b"></i></div><p id="pc" class="serif" style="font-size:1.5rem;margin:4px">0%</p><p id="ms" class="small"> </p></div>`);
+const ms=["Descargando recuerdos…","Buscando tu paciencia conmigo…","Instalando risas…","Casi listo…","Un momento, esto está tardando más de lo normal…","Convenciendo al sistema de que no se trabe…"];
+let p=0,k=0,stuck=0;
+const t=setInterval(()=>{
+if(p<99){p+=3;if(p>99)p=99}else{stuck++;if(stuck%4==0){k++}if(stuck>=24){p=100}}
+$("#b").style.width=p+"%";$("#pc").textContent=p+"%";$("#ms").textContent=ms[Math.min(ms.length-1,p<99?Math.floor(p/20):k+1)];
+if(p==100){clearInterval(t);$("#ms").textContent="¡Listo! Amistad instalada correctamente ✅";app.insertAdjacentHTML("beforeend",`<button onclick="s5()">Continuar</button>`)}},120);
+}
+function s5(){
+const C=[["Tus consejos","Aunque casi siempre soy yo quien te aconseja, tus consejos también me han ayudado más de lo que crees."],["Tu actitud","Tu forma de ser me ha hecho reír cuando más lo necesitaba."],["Tu compañía","Te quedaste conversando conmigo hasta tarde, cuando todos dormían. Tener a alguien con quien charlar me hizo muy feliz."]];
+show(`<span class="tag">Tres tarjetas</span><h2>Lo que me regalaste sin saberlo</h2><p class="small">Toca cada tarjeta</p>`+C.map((c,i)=>`<div class="flip" id="c${i}"><b>${c[0]}</b><span>Toca para abrir</span></div>`).join("")+`<div id="nx"></div>`);
+let o=0;C.forEach((c,i)=>{$("#c"+i).onclick=function(){if(this.dataset.o)return;this.dataset.o=1;this.querySelector("span").textContent=c[1];o++;if(o==3)$("#nx").innerHTML=`<button onclick="s6()">Continuar</button>`}});
+}
+function s6(){
+show(`<div class="card gb"><div class="seal">C</div><div class="letter cur" id="lt"></div></div><div id="nx"><button class="alt" id="sk">Mostrar completa</button></div>`);
+let i=0;const end=()=>{clearInterval(t);$("#lt").textContent=LETTER;$("#lt").classList.remove("cur");$("#nx").innerHTML=`<button onclick="s7()">Continuar</button>`};
+const t=setInterval(()=>{i++;$("#lt").textContent=LETTER.slice(0,i);if(i>=LETTER.length)end()},38);
+$("#sk").onclick=end;
+}
+function s7(){
+if(qi>=Q.length)return s8();
+const [q,o]=Q[qi];
+show(`<p class="small">Ahora cuéntame de ti · Pregunta ${qi+1} de ${Q.length}</p><div class="bar"><i id="b" style="width:${qi/Q.length*100}%"></i></div><div class="card"><h2>${q}</h2>${o.map((x,i)=>`<button class="opt" data-i="${i}">${x}</button>`).join("")}<button class="opt" id="ot">Otros…</button><div id="ob"></div><p class="react" id="rx"></p></div>`);
+setTimeout(()=>{$("#b").style.width=(qi+1)/Q.length*100+"%"},50);
+const done=a=>{A[qi]=a;$("#rx").textContent=REACT[Math.floor(Math.random()*REACT.length)];document.querySelectorAll(".opt").forEach(b=>b.disabled=true);setTimeout(()=>{qi++;s7()},1100)};
+document.querySelectorAll(".opt[data-i]").forEach(b=>b.onclick=()=>{b.classList.add("sel");done(b.textContent)});
+$("#ot").onclick=()=>{$("#ot").classList.add("sel");$("#ob").innerHTML=`<input type="text" id="ti" placeholder="Escribe tu respuesta…" maxlength="200"><button id="ok">Continuar</button>`;$("#ti").focus();
+$("#ok").onclick=()=>{const v=$("#ti").value.trim();if(!v){$("#ti").focus();return}$("#ok").disabled=true;done(v)}};
+}
+function s8(){
+const msg="Hola Carlos, soy Anto 💙 Estas son mis respuestas:\n\n"+Q.map((x,i)=>`${i+1}) ${x[0]}\n→ ${A[i]}`).join("\n\n");
+show(`<div class="seal">A</div><h1>¡Terminaste, Anto!</h1><p>Gracias por responder con sinceridad. Revisa tus respuestas y envíalas a Carlos.</p><div class="sum">${Q.map((x,i)=>`<p><b>${i+1}. ${x[0]}</b><br>${A[i].replace(/</g,"&lt;")}</p>`).join("")}</div><button id="snd">Enviar a Carlos por WhatsApp</button><p class="small">Se abrirá WhatsApp con tus respuestas. Solo toca “enviar”.</p>`);
+$("#snd").onclick=()=>window.open("https://wa.me/"+NUM+"?text="+encodeURIComponent(msg),"_blank");
+}
+s1();
+</script>
+</body>
+</html>
